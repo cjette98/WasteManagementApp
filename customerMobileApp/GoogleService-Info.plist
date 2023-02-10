@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>918963168995-sgieo8br6909ai2v420qpa0q7q60knkt.apps.googleusercontent.com</string>
+	<string>236313280511-glicu54tn6a7r3jar8fogvfe75ase5qq.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.918963168995-sgieo8br6909ai2v420qpa0q7q60knkt</string>
+	<string>com.googleusercontent.apps.236313280511-glicu54tn6a7r3jar8fogvfe75ase5qq</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBHN3b5WDi9tfrZN8fDTro3yBAMQLpPglI</string>
+	<string>AIzaSyCLSrQ1TD3-9WE2lv1-3miypEpPsoYL6v8</string>
 	<key>GCM_SENDER_ID</key>
-	<string>918963168995</string>
+	<string>236313280511</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.waste-management-app</string>
 	<key>PROJECT_ID</key>
-	<string>mobileapp-30060</string>
+	<string>wastemangement-thesis</string>
 	<key>STORAGE_BUCKET</key>
-	<string>mobileapp-30060.appspot.com</string>
+	<string>wastemangement-thesis.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:918963168995:ios:ed8f2bd98b5134075c87d6</string>
+	<string>1:236313280511:ios:0ff5664e26ab900dbe31ca</string>
 </dict>
 </plist>
