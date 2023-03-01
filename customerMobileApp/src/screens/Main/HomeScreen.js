@@ -1,14 +1,31 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-const HomeScreen = () => {
+export default function HomeScreen({ navigation }) {
+  const pressHandler = () => {
+    navigation.navigate('Login');
+  }
+
   return (
     <View>
       <Text>HomeScreen</Text>
+      <TouchableOpacity style={styles.button} onPress={pressHandler}>
+        <Text style={styles.buttonText}>Login</Text>
+      </TouchableOpacity>
     </View>
   )
-}
+};
 
-export default HomeScreen
-
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+  button: {
+    backgroundColor: '#2196F3',
+    padding: 10,
+    borderRadius: 5,
+    marginTop: 10,
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+})
