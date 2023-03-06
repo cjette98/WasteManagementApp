@@ -1,7 +1,11 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-const HomeScreen = () => {
+export default function HomeScreen({ navigation }) {
+  const pressHandler = () => {
+    navigation.navigate('Login');
+  }
+
   return (
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={pressHandler}>

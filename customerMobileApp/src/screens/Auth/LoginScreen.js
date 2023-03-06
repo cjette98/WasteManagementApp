@@ -1,14 +1,90 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react';
+import { View, StyleSheet, SafeAreaView, Text, TextInput } from 'react-native';
+import { Button, Headline } from 'react-native-paper';
+import InputField from '../../components/InputField';
 
-const LoginScreen = () => {
+const Login = ({ navigation }) => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const pressHandler = () => {
+    navigation.navigate('OngoingCompleted');
+  };
+
+  const signupHandler = () => {
+    navigation.navigate('Signup');
+  };
+
   return (
-    <View>
-      <Text>LoginScreen</Text>
-    </View>
-  )
-}
+    <SafeAreaView style={styles.container}>
+      <Headline style={styles.headline}>Sign In</Headline>
 
-export default LoginScreen
+      <View>
+        <Text>Welcome back to BasuraMo-HakotMo</Text>
+        <Text style={{ marginBottom: 30 }}>Online Waste Pickup</Text>
+      </View>
 
-const styles = StyleSheet.create({})
+      <View style={{ marginVertical: 10 }}>
+        
+      <InputField label={'Your Email'} placeholder={'e.g. Mike@cmail.com'} value={email} onChangeText={setEmail} />
+
+      <InputField label={'Your Password'} placeholder={'Minimum of 8 characters'} value={password} onChangeText={setPassword} />
+
+      </View>
+      <Button
+        mode="contained"
+        onPress={pressHandler}
+        style={styles.button}
+        contentStyle={{ backgroundColor: 'darkseagreen' }}
+      >
+        Login
+      </Button>
+
+      <Button
+        mode="contained"
+        onPress={signupHandler}
+        style={styles.signUpbutton}
+        contentStyle={{ backgroundColor: 'darkseagreen' }}
+      >
+        Signup
+      </Button>
+
+    </SafeAreaView>
+  );
+};
+
+const LoginScreen = ({ navigation }) => {
+  return (
+    <SafeAreaView style={styles.container}>
+      <Login navigation={navigation} />
+    </SafeAreaView>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  headline: {
+    marginBottom: 20,
+    fontSize: 30,
+    fontWeight: 'bold',
+  },
+  input: {
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    marginBottom: 10,
+    padding: 10,
+  },
+  button: {
+    marginTop: 20,
+  },
+  signUpbutton: {
+    marginTop: 20,
+  },
+});
+
+export default LoginScreen;
