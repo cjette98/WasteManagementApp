@@ -42,4 +42,5 @@ const styles = StyleSheet.create({
     color: 'darkgreen',
     fontSize: 30
   }
+
 })
