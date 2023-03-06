@@ -1,9 +1,9 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-export default function HomeScreen({ navigation }) {
+export default function CollectorHomeScreen({ navigation }) {
   const pressHandler = () => {
-    navigation.navigate('Login');
+    navigation.navigate('CollectorLoginScreen');
   }
 
   return (
@@ -37,10 +37,10 @@ const styles = StyleSheet.create({
     elevation: 10,
   },
   buttonText: {
-    color: 'white',
     fontWeight: 'bold',
     textAlign: 'center',
     color: 'darkgreen',
     fontSize: 30
-  },
+  }
+
 })
